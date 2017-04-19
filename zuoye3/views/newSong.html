@@ -1,0 +1,23 @@
+<div class = "big">
+	<div class="scroller">
+		<div class="swiper-container">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide"><img src="imgs/banner.jpg" alt=""></div>
+			<div class="swiper-slide"><img src="imgs/banner1.jpg" alt=""></div>
+			<div class="swiper-slide"><img src="imgs/banner2.jpg" alt=""></div>
+			<div class="swiper-slide"><img src="imgs/banner3.jpg" alt=""></div>
+			<div class="swiper-slide"><img src="imgs/banner4.jpg" alt=""></div>
+		</div>
+	</div>
+	<ul class="music-list">
+		<li ng-repeat="i in data">
+			<div class="list-num"> 
+				<span>{{i.song_name}}</span>
+				<span>{{i.singers}}</span>
+				<img src="imgs/download_icon_2.png" alt="" class = "img" ng-click = "sub()">
+			</div>
+		</li>	
+	</ul>
+	</div>
+	
+</div>

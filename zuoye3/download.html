@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en" ng-app = "myapp">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <link type="text/css" rel="stylesheet" href="css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="css/reset.css">
+    <link type="text/css" rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+		.bg{
+			border-bottom: 2px solid #33a3f5;
+		}
+    </style>
+</head>
+<body>
+
+	<header>
+		<div class="left">
+			<img src="imgs/logo_kugou.png" alt=""><span>酷狗音乐</span>
+		</div>
+		<span class = "down">
+			下载酷狗
+		</span>
+		<span class="right">
+			<img src="imgs/search.png" alt="">
+		</span>
+	</header>
+	<nav>
+		<ul>
+			<li ng-class = "['bg'][flag1]" ng-click = "flag1 = add('flag1')"><a href="#/newSong">新歌</a></li>
+			<li ng-class = "['bg'][flag2]" ng-click = "flag2 = add('flag2')"><a href="#/rank" ng-click = "add()">排行</a></li>
+			<li ng-class = "['bg'][flag3]" ng-click = "flag3 = add('flag3')"><a href="#/songList" ng-click = "add()">歌单</a></li>
+			<li ng-class = "['bg'][flag4]" ng-click = "flag4 = add('flag4')"><a href="#/singer" ng-click = "add()">歌手</a></li>
+		</ul>
+	</nav>
+	<div ng-view class = "bigs">
+		
+	</div>
+	<script src = "js/swiper.js"></script>
+	<script src = "js/angular.js"></script>
+	<script src = "js/angular-route.js"></script>
+	<script src = "js/iscroll.js"></script>
+	<script src = "js/index.js"></script>
+</body>
+</html>
